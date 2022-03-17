@@ -1,0 +1,32 @@
+[options]
+margin = 16
+audible_bell = false
+font = JetBrainsMono Nerd Font 11
+word_char_exceptions = -=&#:/.?@+~_%;
+scrollback_lines = 10000
+
+[colors]
+cursor = #4797df
+cursor_foreground = #dcdccc
+
+# background = #101214
+background = rgba(16, 18, 20, 0.94)
+foreground = #c6def5
+highlight = #2f2f2f
+
+color0  = #282d33
+color1  = #ef4741
+color2  = #6ac745
+color3  = #f1ba45
+color4  = #477ddf
+color5  = #8f47df
+color6  = #47b0df
+color7  = #52575e
+color8  = #3a414a
+color9  = #fa6565
+color10 = #86cc6a
+color11 = #efc468
+color12 = #729de9
+color13 = #a46fe0
+color14 = #66c0e9
+color15 = #aab6c3

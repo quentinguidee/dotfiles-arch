@@ -1,0 +1,28 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+setxkbmap be
+dunst &
+picom &
+polybar &
+xrandr --output Virtual1 --mode 1920x1080
+feh --bg-scale ~/.config/wallpaper.jpg
+
+bspc monitor -d 1 2 3 4 5
+
+bspc config border_width         2
+bspc config window_gap          24
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config focused_border_color \#8f47df
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
